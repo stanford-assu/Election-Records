@@ -1,0 +1,231 @@
+/**
+ * ASSU Elections Commission HTML site
+ * Design: Stephen Trusheim (tru@elections.stanford.edu)
+ *  based on the 2009 design by Quinn Slack (sqs@[cs.]stanford.edu)
+ */
+
+
+/* Reset */
+body, h1, h2, h3, h4, h5, h6, ul, li, p, form, dl, dt, dd, hr, section, article, aside, header, footer, nav, dialog, figure {
+  margin: 0;
+  padding: 0; }
+
+section, article, aside, header, footer, nav, dialog, figure {
+  display: block; }
+
+img {
+  border: none; }
+
+
+/* General containers */
+body {
+  font-family: 'lucida grande', 'verdana', 'helvetica', 'arial', sans-serif;
+  background-color: #9F3B43; }
+
+#container {
+  max-width: 1100px;
+  width: 100%;
+  padding: 0;
+  margin: 1em auto;
+  text-align:center;
+}
+
+#header {
+  display: block; }
+#header .nav {
+  white-space: nowrap; }
+
+.spacer {
+  clear:both;
+  /*display:none;*/
+}
+
+a {
+  color: #4868FF;
+  text-decoration:none;
+}
+a:hover {
+  color: #345EDE;
+  text-decoration:underline;
+}
+
+
+/* Navigation */
+.navigation {
+  background-color: #751212;/*#a23f3f;*/
+  color: #CCCCCC;
+  font-size:90%;
+  /*border-bottom: 1px solid #fff;*/
+  padding:.5em;
+}
+
+.navigation h1 {
+  float:left;
+  padding: 0 .75em 0 0;
+  margin: 0;
+  font-size:0;
+}
+
+.navigation h2 {
+  float: left;
+  font-size: 1.15em;
+  padding-right:.75em;
+}
+
+.navigation ul, .navigation ul li {
+  list-style-type: none;
+}
+
+.navigation ul li {
+  display: inline;
+  padding:.5em 1em .5em 1em;
+  border-right:1px solid #9F3B43;
+}
+
+.navigation ul li.selected, .navigation ul li.selected a, .navigation ul li.selected:hover {
+  background:#9F3B43;
+  color:#FFF;
+  text-decoration:none;
+}
+
+.navigation a {
+  color:inherit;
+  text-decoration:underline;
+  font-size: 1.15em;
+}
+
+.navigation a:hover, .navigation ul li:hover {
+  color: #751212;
+  background-color: white;
+}
+
+h1#site_title, h1#site_title a {
+  color:white;
+  text-decoration:none;
+}
+
+
+/* Content */
+#content {
+  margin-top:15px;
+  border: 2px solid #ca6767;
+  padding: 0 25px 5px 25px;
+  background-color: white;
+  line-height: 125%;
+  text-align:left;
+  float:left;
+  min-height:400px;
+  width:825px;
+}
+#content p, #content ul, #content ol {
+  margin: 9px 0;
+}
+#content h1, #content h2, #content h3 {
+  line-height: 150%; }
+#content h1 {
+  font-size: 1.7em; 
+  margin-top:.75em;
+  }
+#content h1, #content h2 {
+  color: #000000; }
+#content h2, #content h3 {
+  margin: 14px 0 3px;
+  margin-top:1em;
+}
+#content ul, #content ol {
+  padding-left: 20px; }
+#content li {
+  margin: 4px 0; }
+#content hr {
+  border: solid 1px #9C9C9C;
+  margin: 15px 0; }
+#content .lede {
+  font-size: 1.1em; }
+#content dt {
+  font-weight: bold; }
+#content dd {
+  margin: 4px 0 9px 20px; }
+#content th {
+  text-align: left; }
+#content th.section {
+  text-decoration: underline;
+  font-size: 1.1em; }
+#content td, #content th {
+  padding: 2px 5px; }
+#content table.account td {
+  text-align: right; }
+#content table.account td:first-child {
+  text-align: left !important; }
+#content .note {
+  font-size:.8em;
+}
+#content .headline {
+font-size:1.2em;
+font-weight:bold;
+}
+
+#content .newsbody {
+ margin-left:1.2em;
+}
+
+.guide {
+  margin:.5em;
+  padding:.75em;
+  padding-left:2.5em;
+  background:#ffdddd;
+  width: 600px;
+}
+  
+  .sidebar {
+    float:right;
+    margin-top:15px;
+    width:200px;
+    background:#DFC3C5;
+    border: 2px solid #ca6767;
+    font-size:100%;
+    text-align:left;
+    color:#333;
+  }
+  
+.sidebar h3 {
+  text-align:center;
+  font-size:120%;
+  font-weight:bold;
+  margin-bottom:.5em;
+  padding-top:.5em;
+}
+
+.sidebar ul {
+  display:block;
+  margin:0;
+}
+.sidebar ul, .sidebar ul li {
+  list-style-type: none;
+}
+
+.sidebar ul li {
+  display:block;
+  margin:0;
+  padding: 3px 0 0 1em;
+}
+
+.sidebar li.last {
+  padding-bottom:.5em;
+}
+
+.sidebar a {
+  display:block;
+  width:100%;
+  height:100%;
+  padding:3px 0 6px 0;
+  color:#444;
+  text-decoration:underline;
+}
+.sidebar a:hover, .sidebar li:hover {
+  background-color: #FFF;
+  color:#751212;
+}
+
+li.primary {
+	padding-bottom:1em;
+}
